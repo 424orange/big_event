@@ -1,11 +1,11 @@
 $(function () {
-  // 点击“去注册账号”的链接
+  // 点击“去注册账号”
   $("#link_reg").on("click", function () {
     $(".login-box").hide();
     $(".reg-box").show();
   });
 
-  // 点击“去登录”的链接
+  // 点击“去登录”
   $("#link_login").on("click", function () {
     $(".login-box").show();
     $(".reg-box").hide();
@@ -67,7 +67,7 @@ $(function () {
         // 将登录成功得到的 token 字符串，保存到 localStorage 中
         localStorage.setItem("token", res.token);
         // 跳转到后台主页
-        location.href = "/index.html";
+        location.href = "/code/index.html";
       },
     });
   });
